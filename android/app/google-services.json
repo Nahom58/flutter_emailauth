@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "111177381445",
+    "project_id": "fir-emailauth-51ac5",
+    "storage_bucket": "fir-emailauth-51ac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111177381445:android:2da64828959a5348ec152c",
+        "android_client_info": {
+          "package_name": "com.example.flutter_emailauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111177381445-te65vg1ba7p79a12grbs5nok90nmml77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp7TnF0cg40q6aaMWKl8LpBWKmBbZDYNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111177381445-te65vg1ba7p79a12grbs5nok90nmml77.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
