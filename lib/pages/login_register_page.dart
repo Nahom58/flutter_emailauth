@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../auth.dart';
+import '../cubit/google_sign_in/google_sign_in_cubit.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -81,6 +83,15 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  Widget _signInwithGoogle() {
+    return ElevatedButton(
+      onPressed: () {
+      final provider = BlocProvider.of<GoogleSignInCubit>(context);
+      provider.signInWithGoogle();
+      }, child: const Text('Sign in with Google'),
+      );
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -101,6 +112,7 @@ class _LoginPageState extends State<LoginPage> {
             _errorMessage(),
             _submitButton(),
             _loginOrRegisterButton(),
+            _signInwithGoogle()
           ],
         ),
       ),
